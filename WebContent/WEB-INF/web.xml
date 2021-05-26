@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>phase2-servlet-fundamental-example-05-26-2021</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- servlet mapping -->
+  <servlet>
+  	<servlet-name>DemoServlet</servlet-name>
+  	<servlet-class>DemoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DemoServlet</servlet-name>
+  	<url-pattern>/demo-servlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>GenericServletDemo</servlet-name>
+  	<servlet-class>GenericServletDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GenericServletDemo</servlet-name>
+  	<url-pattern>/generic-servlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>HttpServletDemo</servlet-name>
+  	<servlet-class>HttpServletDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HttpServletDemo</servlet-name>
+  	<url-pattern>/http-servlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
